@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\support\Facades\DB;
 use App\Exports\UsersExport;
 use App\Exports\UserExport;
+use App\Exports\jenisExport;
 use Maatwebsite\Excel\Facades\Excel;
 
 class Controller0213 extends Controller
@@ -17,7 +18,7 @@ class Controller0213 extends Controller
         return view('buku0213',['buku' => $buku]);
     }
     public function jenisbuku(){
-        $jenisbuku = DB::table('jenisbuku')->get();
+        $jenisbuku = DB::table('jenis_buku')->get();
         
         return view('jenisbuku0213',['jenisbuku' => $jenisbuku]);
     }
@@ -62,6 +63,10 @@ class Controller0213 extends Controller
     public function exportUser() 
     {
         return Excel::download(new UserExport, 'user.xlsx');
+    }
+    public function exportJenis() 
+    {
+        return Excel::download(new jenisExport, 'jenisbuku.xlsx');
     }
         
 }

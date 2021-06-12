@@ -24,4 +24,5 @@ Route::get('rakbuku0213', [Controller0213::class,'rakbuku']);
 Route::get('user0213', [Controller0213::class,'user']);
 Route::get('buku0213/export/', [Controller0213::class,'export']);
 Route::get('user0213/export/', [Controller0213::class,'exportUser']);
+Route::get('jenisbuku0213/export/', [Controller0213::class,'exportJenis']);
 

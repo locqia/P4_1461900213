@@ -14,6 +14,7 @@
 	   <li><a href="buku0213">buku</a>
 		<li><a href="user0213">user</a></li>
 		<li><a href="rakbuku0213">rakbuku</a></li>
+		<li><a href="jenisbuku0213">jenisbuku</a></li>
 		<li><a>Contact</a>
 		    <ul>
 			    <li><a href="https://www.facebook.com/Ququhimanuddinahmad">Facebook</a></li>
